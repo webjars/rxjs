@@ -80,7 +80,7 @@
                                 <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
                                 <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/RxJS-${upstream.version}" excludes="nuget/**,src/**,doc/**,examples/**,tests/**/,.nuget/**"/>
+                                    <fileset dir="${project.build.directory}/RxJS-${upstream.version}" includes="rx.*"/>
                                 </move>
                             </target>
                         </configuration>
