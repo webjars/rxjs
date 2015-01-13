@@ -25,9 +25,9 @@
             {
                 "paths": {
                     "rxjs": "rx"
-                    "rxjs.all": "rx.all"
-                    "rxjs.lite": "rx.lite"
-                    "rxjs.lite.extras": "rx.lite.extras"
+                    "rxjs-all": "rx.all"
+                    "rxjs-lite": "rx.lite"
+                    "rxjs-lite-extras": "rx.lite.extras"
                 },
                 "shim": {
                     "rx.aggregates": [ "rxjs" ],
