@@ -23,37 +23,46 @@
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstream.version}</destDir>
         <requirejs>
             {
-                "paths": {
-                    "rxjs": "rx"
-                    "rxjs-all": "rx.all"
-                    "rxjs-lite": "rx.lite"
-                    "rxjs-lite-extras": "rx.lite.extras"
+                "map": {
+                    '*': {
+                        'rx.all': 'rx-all',
+                        'rx.binding': 'rx-binding',
+                        'rx.virtualtime': 'rx-virtualtime'
+                    }
                 },
-                "shim": {
-                    "rx.aggregates": [ "rxjs" ],
-                    "rx.async": [ "rxjs" ],
-                    "rx.async.compat": [ "rxjs" ],
-                    "rx.backpressure": [ "rxjs" ],
-                    "rx.binding": [ "rxjs" ],
-                    "rx.coincidence": [ "rxjs" ],
-                    "rx.experimental": [ "rxjs" ],
-                    "rx.joinpatterns": [ "rxjs" ],
-                    "rx.sorting": [ "rxjs" ],
-                    "rx.testing": [ "rxjs" ],
-                    "rx.time": [ "rxjs" ],
-                    "rx.virtualtime": [ "rxjs" ],
-                    "rx.aggregates.min": [ "rxjs" ],
-                    "rx.async.min": [ "rxjs" ],
-                    "rx.async.compat.min": [ "rxjs" ],
-                    "rx.backpressure.min": [ "rxjs" ],
-                    "rx.binding.min": [ "rxjs" ],
-                    "rx.coincidence.min": [ "rxjs" ],
-                    "rx.experimental.min": [ "rxjs" ],
-                    "rx.joinpatterns.min": [ "rxjs" ],
-                    "rx.sorting.min": [ "rxjs" ],
-                    "rx.testing.min": [ "rxjs" ],
-                    "rx.time.min": [ "rxjs" ],
-                    "rx.virtualtime.min": [ "rxjs" ]
+                "paths": {
+                    "rx": "rx",
+                    "rx-min": "rx.min",
+                    "rx-all": "rx.all",
+                    "rx-all-min": "rx.all.min",
+                    "rx-lite": "rx.lite",
+                    "rx-lite-min": "rx.lite.min",
+                    "rx-lite-extras": "rx.lite.extras",
+                    "rx-lite-extras-min": "rx.lite.extras.min",
+                    "rx-aggregates": "rx.aggregates",
+                    "rx-aggregates-min": "rx.aggregates.min",
+                    "rx-async": "rx.async",
+                    "rx-async-min": "rx.async.min",
+                    "rx-async-compat": "rx.async.compat",
+                    "rx-async-compat-min": "rx.async.compat.min",
+                    "rx-backpressure": "rx.backpressure",
+                    "rx-backpressure-min": "rx.backpressure.min",
+                    "rx-binding": "rx.binding",
+                    "rx-binding-min": "rx.binding.min",
+                    "rx-coincidence": "rx.coincidence",
+                    "rx-coincidence-min": "rx.coincidence.min",
+                    "rx-experimental": "rx.experimental",
+                    "rx-experimental-min": "rx.experimental.min",
+                    "rx-joinpatterns": "rx.joinpatterns",
+                    "rx-joinpatterns-min": "rx.joinpatterns.min",
+                    "rx-sorting": "rx.sorting",
+                    "rx-sorting-min": "rx.sorting.min",
+                    "rx-testing": "rx.testing",
+                    "rx-testing-min": "rx.testing.min",
+                    "rx-time": "rx.time",
+                    "rx-time-min": "rx.time.min",
+                    "rx-virtualtime": "rx.virtualtime",
+                    "rx-virtualtime-min": "rx.virtualtime.min"
                 }
             }
         </requirejs>
