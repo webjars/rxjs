@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>rxjs</artifactId>
-    <version>2.5.3-SNAPSHOT</version>
+    <version>2.5.3</version>
     <name>RxJS</name>
     <description>WebJar for RxJS</description>
     <url>http://reactive-extensions.github.io/RxJS/</url>
@@ -88,7 +88,7 @@
         <url>http://github.com/webjars/rxjs</url>
         <connection>scm:git:https://github.com/webjars/rxjs.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/rxjs.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>rxjs-2.5.3</tag>
     </scm>
 
     <build>
@@ -121,12 +121,12 @@
                         <goals><goal>run</goal></goals>
                         <configuration>
                             <target>
-                                <echo message="unzip archive"/>
-                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}"/>
-                                <echo message="moving resources"/>
+                                <echo message="unzip archive" />
+                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
+                                <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/RxJS-v.${upstream.version}/dist"/>
-                                    <fileset dir="${project.build.directory}/RxJS-v.${upstream.version}" includes="rs.node.js package.json"/>
+                                    <fileset dir="${project.build.directory}/RxJS-v.${upstream.version}/dist" />
+                                    <fileset dir="${project.build.directory}/RxJS-v.${upstream.version}" includes="rs.node.js package.json" />
                                 </move>
                             </target>
                         </configuration>
